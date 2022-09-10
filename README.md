@@ -1,1 +1,1 @@
-Essa langing page é sobre uma app de investimentos!
+Essa langing page é sobre um app de investimentos!

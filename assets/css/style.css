@@ -15,6 +15,58 @@ body {
     height: 60px;
     width: 100%;
 }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown .button {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 15px;
+    font-family: inherit;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(13, 90, 232);
+}
+
+.dropdown .btns-nav {
+    position: absolute;
+    left: -94%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    border-radius: 8px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.dropdown .btns-nav a {
+    display: block;
+    color: #212121;
+    padding: 12px 24px;
+    text-decoration: none;
+    border: 8px;
+    transition: 0.3s;
+}
+
+.dropdown .btns-nav a:hover {
+    background: #e3e3e3;
+}
+
+.dropdown:hover .button {
+    background: rgb(13, 90, 232);
+}
+
+.dropdown:hover .btns-nav {
+    opacity: 1;
+    z-index: 1;
+}
 
 .cabecalho h1 {
     color: white;
@@ -139,5 +191,17 @@ body {
     }
     .botoes-download button {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media screen and (max-width:789px) {
+    .lista-de-itens {
+        display: none;
     }
 }

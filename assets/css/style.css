@@ -55,6 +55,11 @@ body {
     transition: 0.3s;
 }
 
+.btns-nav a:nth-child(4){
+    background-color:rgb(13, 90, 232);
+    border-radius: 0 0 4px 4px;
+}
+
 .dropdown .btns-nav a:hover {
     background: #e3e3e3;
 }
@@ -141,9 +146,14 @@ body {
     background-color: white;
     border: none;
     border-radius: 10px;
-    box-shadow: 5px 15px 40px black;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     font: 12pt arial;
+    transition: .2s ease-in-out;
+}
+
+.botoes-download button:hover{
+    transform: translateY(-2px);
 }
 
 .botoes-download img {
